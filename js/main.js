@@ -1,30 +1,29 @@
 $(function(){
-    $("#1").click(function() {
+    $("#1, #6").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".nav").offset().top
         }, 2000);
     });
-    $("#2").click(function() {
+    $("#2, #7").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".about").offset().top
         }, 2000);
     });
-    $("#3").click(function() {
+    $("#3, #8").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".skills").offset().top
         }, 2000);
     });
-    $("#4").click(function() {
+    $("#4, #9").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".portfolio").offset().top
         }, 2000);
     });
-    $("#5").click(function() {
+    $("#5, #10").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".contacts").offset().top
         }, 2000);
-    });
-
+    });  
 
     $(window).scroll(function() {
         var height = $(window).scrollTop();
@@ -52,10 +51,4 @@ $(function(){
         $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
     }
     
-
-
-
-
-
 });
-
